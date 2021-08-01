@@ -10,7 +10,7 @@
     <!-- NAV BAR AREA -->
     <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark text-white fixed-top">
       <div class="container">
-        <a href="" class="navbar-brand"><span>C</span>olossal PI<span>ZZ</span>A</a>
+        <a href="" class="navbar-brand"><span class="text-warning">C</span>olossal PI<span class="text-danger">ZZ</span>A</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
           <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
     <!-- WELCOME SECTION -->
     <section class="sectOne pt-5" id="welcome">
       <div class="container text-center">
-        <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="position-absolute top-50 start-50 translate-middle bg-danger p-3">
           <h4>Welcome to</h4>
           <h3>COLOSSAL PIZZA</h3>
         </div>
@@ -46,7 +46,7 @@
     <section class="sectTwo" id="display">
       <div class="container p-5">
         <div class="text-center">
-          <h2>GET PIZZA</h2>
+          <h2>Get Pizza</h2>
         </div>
         <div class="row">
           <div class="col">
@@ -74,10 +74,37 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row text-center">
+
+        <!-- ORDER FORM & CONTACT DETAILS -->
+
+        <div class="row text-center">
+          <vid class="col">
+            <h3>Place Your Order</h3>
+            <form action="" method="get">
+              <div class="pizzaSizee">
+                <label for="pizzaSize">Choose Pizza:</label>
+              <select name="pizzaSize" id="pizzaSize">
+                <optgroup label="Chicken Hawaiian">
+                  <option value="">Small Size: Ksh. 250/=</option>
+                  <option value="">Medium Size: Ksh. 700/=</option>
+                  <option value="">Large Size: Ksh. 1200/=</option>
+                </optgroup>
+                <optgroup label="Cheese Burger">
+                  <option value="">Small Size: Ksh. 200/=</option>
+                  <option value="">Medium Size: Ksh. 500/=</option>
+                  <option value="">Large Size: Ksh. 800/=</option>
+                </optgroup>
+                <optgroup label="Beef Pepperoni">
+                  <option value="">Small Size: Ksh. 300/=</option>
+                  <option value="">Medium Size: Ksh. 650/=</option>
+                  <option value="">Large Size: Ksh. 1100/=</option>
+                </optgroup>
+              </select>
+              </div>
+            </form>
+          </vid>
           <vid class="col">XXX</vid>
-          <vid class="col">XXX</vid>
-        </div> -->
+        </div>
       </div>
     </section>
 
@@ -85,7 +112,7 @@
     <section class="sectThree" id="contact">
       <div class="container">
         <div class="row g-4 p-5">
-          <h5 class="text-center mb-4">Contact Us</h5>
+          <h2 class="text-center mb-4">Contact Us</h2>
           <div class="col-md">
             
             <li class="list-group-item">
@@ -113,8 +140,10 @@
 
     <!-- FOOTER AREA -->
     <footer class="bg-dark text-white text-center">
-      <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="index.html">Colossal PIZZA</a>,</p>
+      <div class="container p-2">
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="index.html">Colossal PIZZA</a>,</p>
       <h6>All Right Reserved</h6>
+      </div>
     </footer>
       
 
