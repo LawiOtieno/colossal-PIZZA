@@ -24,3 +24,12 @@
     border-radius: 3px;
     padding: 4px;
 }
+
+.quantityy, .fullNamee, .emaill{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(233, 221, 198);
+    border: 1px solid rgb(177, 223, 124);
+    border-radius: 3px;
+    padding: 4px;
+}
