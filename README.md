@@ -1,6 +1,9 @@
 # COLOSSAL PIZZA
 
 
+## Description
+This is website project, developed bt Lawrence to enamble Colossal Pizza expand their customer and increase revenue. This website enables a customer to place  his or her order at the comfort of his/her home, then customer can choose if he/her what the Pizza to delivered at an extra but affordable cost or the customer can just come and pick Pizza.
+
 ## Author(s) Info
 Lawrence is a Fullstack developer who studied coding in Moringa School under ACCESS SPONSORSHIP.
 
