@@ -54,7 +54,7 @@
             <img src="./assets/cHawai.jpeg" alt="Chicken Hawaiian Image" height="183px" width="325px">
             <p><span class="fw-bold">Chicken Hawaiian</span> is a great high protein meal! Top a chicken breast with pizza sauce, and your favorite toppings.</p>
             <div class="text-center">
-              <button class="btn btn-success"><a href="xxx"></a>PLACE ORDER</button>
+              <button class="btn btn-success"><a href="#chickenHawaii"></a>PLACE ORDER</button>
             </div>
           </div>
           <div class="col">
@@ -62,7 +62,7 @@
             <img src="./assets/Cheeseburger-Pizza.jpg" alt="Cheese Burger Image" height="183px" width="325px">
             <p><span class="fw-bold">Cheese Burger</span> is made with ground beef cheddar cheeses, bacon, tomatoes, and onions. This is everything a burger lover dreams of.</p>
             <div class="text-center">
-              <button class="btn btn-success"><a href="xxx"></a>PLACE ORDER</button>
+              <button class="btn btn-success"><a href="#cheeseBurge"></a>PLACE ORDER</button>
             </div>
           </div>
           <div class="col">
@@ -70,31 +70,39 @@
             <img src="./assets/Beef-pepperoni-pizza.jpg" alt="Beef Pepperoni Image" height="183px" width="325px">
             <p><span class="fw-bold">Beef Pepperoni</span> is made from a mixture of ground pork and beef mixed with spices and flavorings.</p>
             <div class="text-center">
-              <button class="btn btn-success"><a href="xxx"></a>PLACE ORDER</button>
+              <button class="btn btn-success"><a href="#beefPeppero"></a>PLACE ORDER</button>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <hr>
 
-        <!-- ORDER FORM & CONTACT DETAILS -->
 
-        <div class="row">
+    <!-- ORDER FORM & CONTACT DETAILS -->
+
+    <section class="sectTwo2 display2">
+      <div class="container p-3">
+        <div class="row p-5">
           <vid class="col">
-            <h3>Place Your Order</h3>
-            <form action="" method="get">
+            <div class="text-center">
+              <h3>Place Your Order</h3>
+            </div>
+            <form action="" method="" id="orderFormm">
               <div class="pizzaSizee">
                 <label for="pizzaSize">Choose Pizza:</label>
               <select name="pizzaSize" id="pizzaSize">
-                <optgroup label="Chicken Hawaiian">
+                <optgroup id="chickenHawaii" label="Chicken Hawaiian">
                   <option value="">Small Size: Ksh. 250/=</option>
                   <option value="">Medium Size: Ksh. 700/=</option>
                   <option value="">Large Size: Ksh. 1200/=</option>
                 </optgroup>
-                <optgroup label="Cheese Burger">
+                <optgroup id="cheeseBurge" label="Cheese Burger">
                   <option value="">Small Size: Ksh. 200/=</option>
                   <option value="">Medium Size: Ksh. 500/=</option>
                   <option value="">Large Size: Ksh. 800/=</option>
                 </optgroup>
-                <optgroup label="Beef Pepperoni">
+                <optgroup id="beefPeppero" label="Beef Pepperoni">
                   <option value="">Small Size: Ksh. 300/=</option>
                   <option value="">Medium Size: Ksh. 650/=</option>
                   <option value="">Large Size: Ksh. 1100/=</option>
@@ -150,27 +158,36 @@
               </div>
               <br>
               <div class="fullNamee">
-                <label for="quantity">Full Name:</label>
-              <input type="text" name="NAME" id="name" placeholder="Enter Full Name" required>
+                <label for="quantity">Your Name:</label>
+              <input type="text" name="NAME" id="yourName" placeholder="Enter Full Name" required>
               </div>
               <br>
               <div class="emaill">
                 <label for="quantity">Email:</label>
-              <input type="email" name="EMAIL" id="email" placeholder="Enter Your Email" required>
+              <input type="email" name="EMAIL" id="yourEmail" placeholder="Enter Your Email" required>
               </div>
               <br><br>
               <button class="btn btn-info" type="submit">See Cost</button>
             </form>
           </vid>
-          <vid class="col">XXX</vid>
+          <vid class="col">
+            <div class="text-center">
+              <h3>Order Info & Delivery</h3>
+            </div>
+            <div id="infoDisplay"></div>
+          </vid>
         </div>
       </div>
     </section>
 
+    <hr>
+
+
+
     <!-- CONTACT ADDRESS SECTION -->
     <section class="sectThree" id="contact">
       <div class="container">
-        <div class="row g-4 p-5">
+        <div class="row g-4 p-3">
           <h2 class="text-center mb-4">Contact Us</h2>
           <div class="col-md">
             
