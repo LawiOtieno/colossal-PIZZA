@@ -11,6 +11,15 @@ $(document).ready(function(){
         let selectedpizzaCrust =$("#pizzaCrust optgroup option:selected").val();
         let selectedpizzaTopping =$("#pizzaTopping optgroup option:selected").val();
         let inputtedQuantity = $("#addQuantity").val();
+
+        let pizzaSizePr = parseInt($("#pizzaSize optgroup option:selected").text());
+        let pizzaCrustPr = parseInt($("#pizzaCrust optgroup option:selected").text());
+        let pizzaToppingPr = parseInt($("#pizzaTopping optgroup option:selected").text());
+        let addQuantityNr = parseInt($("#addQuantity").val());
+
+        let pizzaPrice = pizzaSizePr + pizzaCrustPr + pizzaToppingPr;
+        let pizzaCost = pizzaPrice * addQuantityNr
+        
         
 
         $("#lblName").html(inputtedFullName);
@@ -20,7 +29,7 @@ $(document).ready(function(){
         $("#lblPizzaCrust").html(selectedpizzaCrust);
         $("#lblPizzaTopping").html(selectedpizzaTopping);
         $("#lblPizzaQuantity").html(inputtedQuantity);
-        $("#lblPizzaCost").html();
+        $("#lblPizzaCost").html(pizzaCost);
 
         $("#yourName").val();
         $("#yourMobile").val();
@@ -29,6 +38,11 @@ $(document).ready(function(){
         $("#pizzaCrust optgroup option:selected").val();
         $("#pizzaTopping optgroup option:selected").val();
         $("#addQuantity").val();
+
+
+        $("#pizzaSize optgroup option:selected").text();
+        $("#pizzaCrust optgroup option:selected").text();
+        $("#pizzaTopping optgroup option:selected").text();
     });
 });
 
