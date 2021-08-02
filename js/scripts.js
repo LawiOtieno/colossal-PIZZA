@@ -7,22 +7,31 @@ $(document).ready(function(){
         let inputtedFullName = $("#yourName").val();
         let inputtedMobile = $("#yourMobile").val();
         let inputtedEmail = $("#yourEmail").val();
+        let selectedPizzaSize =$("#pizzaSize optgroup option:selected").val();
+        let selectedpizzaCrust =$("#pizzaCrust optgroup option:selected").val();
+        let selectedpizzaTopping =$("#pizzaTopping optgroup option:selected").val();
+        let inputtedQuantity = $("#addQuantity").val();
         
 
         $("#lblName").html(inputtedFullName);
         $("#lblMobile").html(inputtedMobile);
         $("#lblEmail").html(inputtedEmail);
-        $("#lblPizzaSize").html();
-        $("#lblPizzaCrust").html();
-        $("#lblPizzaTopping").html();
-        $("#lblPizzaQuantity").html();
+        $("#lblPizzaSize").html(selectedPizzaSize);
+        $("#lblPizzaCrust").html(selectedpizzaCrust);
+        $("#lblPizzaTopping").html(selectedpizzaTopping);
+        $("#lblPizzaQuantity").html(inputtedQuantity);
         $("#lblPizzaCost").html();
 
         $("#yourName").val();
         $("#yourMobile").val();
         $("#yourEmail").val();
+        $("#pizzaSize optgroup option:selected").val();
+        $("#pizzaCrust optgroup option:selected").val();
+        $("#pizzaTopping optgroup option:selected").val();
+        $("#addQuantity").val();
     });
 });
+
 
 function orderPrint(){
     let print_div = document.getElementById("infoDisplay"); //$("#infoDisplay");
