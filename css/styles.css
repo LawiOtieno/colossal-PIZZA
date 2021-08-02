@@ -33,3 +33,7 @@
     border-radius: 3px;
     padding: 4px;
 }
+
+#infoDisplay{
+    display: none;
+}

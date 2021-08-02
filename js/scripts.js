@@ -2,12 +2,24 @@ $(document).ready(function(){
     $("form#orderFormm").submit(function(event){
         event.preventDefault();
 
-        let inputtedFullName = $("#yourName").val();
-        let inputtedEmail = $("#yourEmail").val();
+        $("#infoDisplay").show();
 
-        $("#infoDisplay").html("Hello " +inputtedFullName+ " the cost of your Pizza is " /*+pizzaCost+*/ + ". When you have placed your Order, we will also send email Notification to " +inputtedEmail);
+        let inputtedFullName = $("#yourName").val();
+        let inputtedMobile = $("#yourMobile").val();
+        let inputtedEmail = $("#yourEmail").val();
+        
+
+        $("#lblName").html(inputtedFullName);
+        $("#lblMobile").html(inputtedMobile);
+        $("#lblEmail").html(inputtedEmail);
+        $("#lblPizzaSize").html();
+        $("#lblPizzaCrust").html();
+        $("#lblPizzaTopping").html();
+        $("#lblPizzaQuantity").html();
+        $("#lblPizzaCost").html();
 
         $("#yourName").val();
+        $("#yourMobile").val();
         $("#yourEmail").val();
     });
 });

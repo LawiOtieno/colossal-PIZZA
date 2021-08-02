@@ -162,6 +162,11 @@
               <input type="text" name="NAME" id="yourName" placeholder="Enter Full Name" required>
               </div>
               <br>
+              <div class="fullNamee">
+                <label for="quantity">Phone Number:</label>
+              <input type="number" name="tel" id="yourMobile" placeholder="Enter Phone Number" required>
+              </div>
+              <br>
               <div class="emaill">
                 <label for="quantity">Email:</label>
               <input type="email" name="EMAIL" id="yourEmail" placeholder="Enter Your Email" required>
@@ -174,7 +179,33 @@
             <div class="text-center">
               <h3>Order Info & Delivery</h3>
             </div>
-            <div id="infoDisplay"></div>
+            <div id="infoDisplay">
+              <p>Hello our <strong>esteemed Customer</strong>, below is the information about the cost of your Pizza, according to your selection:</p>
+              <li class="list-group-item">
+                Name: <span class="fw-bold" id="lblName"></span>.
+              </li>
+              <li class="list-group-item">
+                Mobile: <span class="fw-bold" id="lblMobile"></span>.
+              </li>
+              <li class="list-group-item">
+                Email: <span class="fw-bold" id="lblEmail"></span>.
+              </li>
+              <li class="list-group-item">
+                Pizza Size: <span class="fw-bold" id="lblPizzaSize"></span>.
+              </li>
+              <li class="list-group-item">
+                Pizza Crust: <span class="fw-bold" id="lblPizzaCrust"></span>.
+              </li>
+              <li class="list-group-item">
+                Pizza Topping: <span class="fw-bold" id="lblPizzaTopping"></span>.
+              </li>
+              <li class="list-group-item">
+                Number of Quantity: <span class="fw-bold" id="lblPizzaQuantity"></span>.
+              </li>
+              <li class="list-group-item">
+                Pizza Total Cost: <span class="fw-bold" id="lblPizzaCost"></span>.
+              </li>
+            </div>
           </vid>
         </div>
       </div>
