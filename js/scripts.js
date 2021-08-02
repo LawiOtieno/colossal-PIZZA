@@ -60,7 +60,7 @@ function orderPrint(){
 
 function orderDeliver(){
     let location = prompt("Enter your location");
-    alert("Your will be delivered to " +location+ " at an Extra cost of Ksh. 200/=");
+    alert("Your order will be delivered to " +location+ " at an Extra cost of Ksh. 200/=");
 }
 
 function orderNoDeliver(){
