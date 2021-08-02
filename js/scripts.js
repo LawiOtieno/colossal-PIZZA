@@ -30,6 +30,7 @@ $(document).ready(function(){
         $("#lblPizzaTopping").html(selectedpizzaTopping);
         $("#lblPizzaQuantity").html(inputtedQuantity);
         $("#lblPizzaCost").html(pizzaCost);
+        // $("#lblPizzaCost").html(location);
 
         $("#yourName").val();
         $("#yourMobile").val();
@@ -60,4 +61,8 @@ function orderPrint(){
 function orderDeliver(){
     let location = prompt("Enter your location");
     alert("Your will be delivered to " +location+ " at an Extra cost of Ksh. 200/=");
+}
+
+function orderNoDeliver(){
+    alert("You are welcomed to pick your order at Colossal Pizza, Korogocho. From 8:00AM to 10:30PM !")
 }
