@@ -10,8 +10,8 @@ Lawrence is a Fullstack developer who studied coding in Moringa School under ACC
 ## Setup Requirements
 * You need a GitHub account.
 * Browser like Google Chrome and internet connection.
-* You can clone this repo in Terminal through: git clone 
-* You can click this link to run it live: [Colossal PIZZA]()
+* You can clone this repo in Terminal through: git clone https://github.com/LawiOtieno/colossal-PIZZA
+* You can click this link to run it live: [Colossal PIZZA](https://lawiotieno.github.io/colossal-PIZZA/)
 
 ## Technologies Used
 This website was developed using HTML, CSS and JS programming languages. Coding was done on Visual Studio editor.

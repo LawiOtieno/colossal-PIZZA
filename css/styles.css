@@ -1,1 +1,39 @@
-*{}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.sectOne{
+    background-image: url("../assets/BG-pizza.jpg");
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.position-absolute{
+    border-radius: 50%;
+}
+
+.pizzaSizee, .pizzaCrustt, .pizzaToppingg{
+    height: 70px;
+    width: 100%;
+    background-color: antiquewhite;
+    border: 1px solid rgb(236, 154, 46);
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.quantityy, .fullNamee, .emaill{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(233, 221, 198);
+    border: 1px solid rgb(177, 223, 124);
+    border-radius: 3px;
+    padding: 4px;
+}
+
+#infoDisplay{
+    display: none;
+}
