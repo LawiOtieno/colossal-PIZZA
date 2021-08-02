@@ -56,3 +56,8 @@ function orderPrint(){
     print_area.print();
     print_area.close();
 }
+
+function orderDeliver(){
+    let location = prompt("Enter your location");
+    alert("Your will be delivered to " +location+ " at an Extra cost of Ksh. 200/=");
+}
