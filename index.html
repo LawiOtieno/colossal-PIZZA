@@ -83,7 +83,10 @@
       </div>
     </div>
   </section>
-  <hr>
+  
+  <div class="container">
+    <hr>
+  </div>
 
 
   <!-- ORDER FORM & CONTACT DETAILS -->
@@ -96,23 +99,32 @@
             <h3>Place Your Order</h3>
           </div>
           <form action="" method="" id="orderFormm">
+            <div class="pizzaFlavourr">
+              <label for="pizzaFlavour">Choose Pizza Flavour:</label>
+              <select name="pizzaFlavour" id="pizzaFlavour">
+                <option value="Chicken Hawaiian Pizza" txt="">Chicken Hawaiian Pizza</option>
+                <option value="Cheese Burger Pizza" txt="">Cheese Burger Pizza</option>
+                <option value="Beef Pepperoni Pizza" txt="">Beef Pepperoni Pizza</option>
+              </select>
+            </div>
+            <br>
             <div class="pizzaSizee">
-              <label for="pizzaSize">Choose Pizza Flavour & Size:</label>
+              <label for="pizzaSize">Choose Pizza Size:</label>
               <select name="pizzaSize" id="pizzaSize">
                 <optgroup label="Chicken Hawaiian">
-                  <option value="Chicken Hawaiian, Small Size: Ksh. 250" txt="">Small Size: Ksh. 250/=</option>
-                  <option value="Chicken Hawaiian, Medium Size: Ksh. 700" txt="">Medium Size: Ksh. 700/=</option>
-                  <option value="Chicken Hawaiian, Large Size: Ksh. 1200" txt="">Large Size: Ksh. 1200/=</option>
+                  <option value="250" txt="">Small Size: Ksh. 250/=</option>
+                  <option value="700" txt="">Medium Size: Ksh. 700/=</option>
+                  <option value="1200" txt="">Large Size: Ksh. 1200/=</option>
                 </optgroup>
                 <optgroup label="Cheese Burger">
-                  <option value="Cheese Burger, Small Size: Ksh. 200" txt="">Small Size: Ksh. 200/=</option>
-                  <option value="Cheese Burger, Medium Size: Ksh. 500" txt="">Medium Size: Ksh. 500/=</option>
-                  <option value="Cheese Burger, Large Size: Ksh. 800" txt="">Large Size: Ksh. 800/=</option>
+                  <option value="200" txt="">Small Size: Ksh. 200/=</option>
+                  <option value="500" txt="">Medium Size: Ksh. 500/=</option>
+                  <option value="800" txt="">Large Size: Ksh. 800/=</option>
                 </optgroup>
                 <optgroup label="Beef Pepperoni">
-                  <option value="Beef Pepperoni, Small Size: Ksh. 300" txt="">Small Size: Ksh. 300/=</option>
-                  <option value="Beef Pepperoni, Medium Size: Ksh. 650" txt="">Medium Size: Ksh. 650/=</option>
-                  <option value="Beef Pepperoni, Large Size: Ksh. 1100" txt="">Large Size: Ksh. 1100/=</option>
+                  <option value="300" txt="">Small Size: Ksh. 300/=</option>
+                  <option value="650" txt="">Medium Size: Ksh. 650/=</option>
+                  <option value="1100" txt="">Large Size: Ksh. 1100/=</option>
                 </optgroup>
               </select>
             </div>
@@ -121,19 +133,19 @@
               <label for="pizzaCrust">Choose Crust:</label>
               <select name="pizzaCrust" id="pizzaCrust">
                 <optgroup label="Chicken Hawaiian">
-                  <option value="Crispy: Ksh. 40" txt="">Crispy: Add @ Ksh. 40/=</option>
-                  <option value="Stuffed: Ksh. 90" txt="">Stuffed: Add @ Ksh. 90/=</option>
-                  <option value="Gluten-free: Ksh. 130" txt="">Gluten-free: Add @ Ksh. 130/=</option>
+                  <option value="40" txt="">Crispy: Add @ Ksh. 40/=</option>
+                  <option value="90" txt="">Stuffed: Add @ Ksh. 90/=</option>
+                  <option value="130" txt="">Gluten-free: Add @ Ksh. 130/=</option>
                 </optgroup>
                 <optgroup label="Cheese Burger">
-                  <option value="Crispy: Ksh. 30" txt="">Crispy: Add @ Ksh. 30/=</option>
-                  <option value="Stuffed: Ksh. 60" txt="">Stuffed: Add @ Ksh. 60/=</option>
-                  <option value="Gluten-free: Ksh. 80" txt="">Gluten-free: Add @ Ksh. 80/=</option>
+                  <option value="30" txt="">Crispy: Add @ Ksh. 30/=</option>
+                  <option value="60" txt="">Stuffed: Add @ Ksh. 60/=</option>
+                  <option value="80" txt="">Gluten-free: Add @ Ksh. 80/=</option>
                 </optgroup>
                 <optgroup label="Beef Pepperoni">
-                  <option value="Crispy: Ksh. 50" txt="">Crispy: Add @ Ksh. 50/=</option>
-                  <option value="Stuffed: Ksh. 90" txt="">Stuffed: Add @ Ksh. 90/=</option>
-                  <option value="Gluten-free: Ksh. 150" txt="">Gluten-free: Add @ Ksh. 150/=</option>
+                  <option value="50" txt="">Crispy: Add @ Ksh. 50/=</option>
+                  <option value="90" txt="">Stuffed: Add @ Ksh. 90/=</option>
+                  <option value="150" txt="">Gluten-free: Add @ Ksh. 150/=</option>
                 </optgroup>
               </select>
             </div>
@@ -142,19 +154,19 @@
               <label for="pizzaTopping">Choose Topping:</label>
               <select name="pizzaTopping" id="pizzaTopping">
                 <optgroup label="Chicken Hawaiian">
-                  <option value="Onion: Ksh. 30" txt="">Onion: Add @ Ksh. 30/=</option>
-                  <option value="Pineapple: Ksh. 50" txt="">Pineapple: Add @ Ksh. 50/=</option>
-                  <option value="Ham: Ksh. 100" txt="">Ham: Add @ Ksh. 100/=</option>
+                  <option value="30" txt="">Onion: Add @ Ksh. 30/=</option>
+                  <option value="50" txt="">Pineapple: Add @ Ksh. 50/=</option>
+                  <option value="100" txt="">Ham: Add @ Ksh. 100/=</option>
                 </optgroup>
                 <optgroup label="Cheese Burger">
-                  <option value="Tomato: Ksh. 30" txt="">Tomato: Add @ Ksh. 30/=</option>
-                  <option value="Pineapple: Ksh. 50" txt="">Pineapple: Add @ Ksh. 50/=</option>
-                  <option value="Lettuce: Ksh. 70" txt="">Lettuce: Add @ Ksh. 70/=</option>
+                  <option value="30" txt="">Tomato: Add @ Ksh. 30/=</option>
+                  <option value="50" txt="">Pineapple: Add @ Ksh. 50/=</option>
+                  <option value="70" txt="">Lettuce: Add @ Ksh. 70/=</option>
                 </optgroup>
                 <optgroup label="Beef Pepperoni">
-                  <option value="Tomato: Ksh. 30" txt="">Tomato: Add @ Ksh. 30/=</option>
-                  <option value="Lettuce: Ksh. 70" txt="">Lettuce: Add @ Ksh. 70/=</option>
-                  <option value="Ham: Ksh. 100" txt="">Ham: Add @ Ksh. 100/=</option>
+                  <option value="30" txt="">Tomato: Add @ Ksh. 30/=</option>
+                  <option value="70" txt="">Lettuce: Add @ Ksh. 70/=</option>
+                  <option value="100" txt="">Ham: Add @ Ksh. 100/=</option>
                 </optgroup>
               </select>
             </div>
@@ -165,7 +177,7 @@
             </div>
             <br>
             <div class="fullNamee">
-              <label for="quantity">Your  Name:</label>
+              <label for="quantity">Your Name:</label>
               <input type="text" name="NAME" id="yourName" placeholder="Enter Full Name" required>
             </div>
             <br>
@@ -179,7 +191,7 @@
               <input type="email" name="EMAIL" id="yourEmail" placeholder="Enter Your Email" required>
             </div>
             <br><br>
-            <button class="btn btn-info" type="submit">See Cost</button>
+            <button class="btn btn-info" onclick="totalAmount()" type="submit">See Cost</button>
           </form>
         </vid>
         <vid class="col">
@@ -187,7 +199,7 @@
             <h3>Order Info & Delivery</h3>
           </div>
           <div id="infoDisplay">
-            <p>Hello our <strong>esteemed Customer</strong>, below is the information about the cost of your Pizza,
+            <p class="p-3">Hello our <strong>esteemed Customer</strong>, below is the information about the cost of your Pizza,
               according to your selection:</p>
             <li class="list-group-item">
               Name: <span class="fw-bold" id="lblName"></span>
@@ -199,34 +211,40 @@
               Email: <span class="fw-bold" id="lblEmail"></span>
             </li>
             <li class="list-group-item">
-              Pizza Flavour, Size: <span class="fw-bold" id="lblPizzaSize"></span>
+              Pizza Flavour: <span class="fw-bold" id="lblPizzaFlavour"></span>
             </li>
             <li class="list-group-item">
-              Pizza Crust: <span class="fw-bold" id="lblPizzaCrust"></span>
+              Pizza Size Chosen Costs: <span class="fw-bold" id="lblPizzaSize"></span>/=
             </li>
             <li class="list-group-item">
-              Pizza Topping: <span class="fw-bold" id="lblPizzaTopping"></span>
+              Pizza Crust Chosen Costs: <span class="fw-bold" id="lblPizzaCrust"></span>/=
+            </li>
+            <li class="list-group-item">
+              Pizza Topping Chosen Costs: <span class="fw-bold" id="lblPizzaTopping"></span>/=
             </li>
             <li class="list-group-item">
               Number of Quantity: <span class="fw-bold" id="lblPizzaQuantity"></span>
             </li>
             <li class="list-group-item">
-              Pizza Total Cost: <span class="fw-bold" id="lblPizzaCost"></span>
+              Pizza Total Cost: <span class="fw-bold" id="lblPizzaCost"></span>/=
             </li>
-            <br>
-
-            <h2>Choose Delivery</h2>
-            <br>
-            <input type="button" class="bg-warning p-2 rounded" value="Deliver Home" onclick="orderDeliver()"> <input type="button" class="bg-warning p-2 rounded" value="I Will Pick" onclick="orderNoDeliver()">
-            <br><br><br>
-            <input type="button" class="bg-success p-2 rounded" value="Checkout & Print Bill" onclick="orderPrint()">
           </div>
+          <br>
+          <div class="p-5" id="infoDelivery">
+              <h2>Choose Delivery</h2>
+              <br>
+              <input type="button" class="bg-warning p-2 rounded" value="Deliver Home" onclick="orderDeliver()"> <input type="button" class="bg-warning p-2 rounded" value="I Will Pick" onclick="orderNoDeliver()">
+              <br><br><br>
+              <input type="button" class="bg-success p-2 rounded" value="Checkout & Print Bill" onclick="orderPrint()">
+            </div>
         </vid>
       </div>
     </div>
   </section>
 
-  <hr>
+  <div class="container">
+    <hr>
+  </div>
 
 
 
