@@ -65,11 +65,13 @@ function orderDeliver(){
     let location = prompt("Enter your location");
     let total = (pizzaFlavour() + pizzaCrust() + pizzaTopping())*getQuantity();
     alert("Your order will be delivered to " +location+ " at an Extra cost of Ksh. 200/= \n " + " Your Overall cost: Ksh. " + (total+200) + "/=");
+    alert("Our Delivery Agent will contact you in the next 5 Minutes and Delivery to be done within the next 30 Minutes. \n  Thank you for shopping with us!!!");
 }
 
 function orderNoDeliver(){
     let total = (pizzaFlavour() + pizzaCrust() + pizzaTopping())*getQuantity();
     alert("You are welcomed to pick your order at Colossal Pizza, Korogocho. From 8:00AM to 10:30PM ! \n" + "Please come with Ksh. " +total+ "/=")
+    alert("Thank you for shopping with us!!!");
 }
 // END FUNCTION FOR DELIVERY
 
