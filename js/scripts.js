@@ -2,52 +2,51 @@ $(document).ready(function(){
     $("form#orderFormm").submit(function(event){
         event.preventDefault();
 
+        // SEE PIZZA COST SHOW
         $("#infoDisplay").show();
 
+        // DELIVERY PART SHOW
+        $("#infoDelivery").show();
+        
+
+        // DECLARING CUSTOMER INPUTS AND SELECTIONS
         let inputtedFullName = $("#yourName").val();
         let inputtedMobile = $("#yourMobile").val();
         let inputtedEmail = $("#yourEmail").val();
+        let selectedPizzaFlavour =$("#pizzaFlavour option:selected").val();
         let selectedPizzaSize =$("#pizzaSize optgroup option:selected").val();
         let selectedpizzaCrust =$("#pizzaCrust optgroup option:selected").val();
         let selectedpizzaTopping =$("#pizzaTopping optgroup option:selected").val();
         let inputtedQuantity = $("#addQuantity").val();
-
-        let pizzaSizePr = parseInt($("#pizzaSize optgroup option:selected").text());
-        let pizzaCrustPr = parseInt($("#pizzaCrust optgroup option:selected").text());
-        let pizzaToppingPr = parseInt($("#pizzaTopping optgroup option:selected").text());
-        let addQuantityNr = parseInt($("#addQuantity").val());
-
-        let pizzaPrice = pizzaSizePr + pizzaCrustPr + pizzaToppingPr;
-        let pizzaCost = pizzaPrice * addQuantityNr
         
         
 
+        // DISPLAYING CUSTOMER INPUT AND SELECTION
         $("#lblName").html(inputtedFullName);
         $("#lblMobile").html(inputtedMobile);
         $("#lblEmail").html(inputtedEmail);
+        $("#lblPizzaFlavour").html(selectedPizzaFlavour);
         $("#lblPizzaSize").html(selectedPizzaSize);
         $("#lblPizzaCrust").html(selectedpizzaCrust);
         $("#lblPizzaTopping").html(selectedpizzaTopping);
         $("#lblPizzaQuantity").html(inputtedQuantity);
-        $("#lblPizzaCost").html(pizzaCost);
-        // $("#lblPizzaCost").html(location);
 
+
+        // COLLECTING CUSTOMER INPUTS AND SELECTIONS
         $("#yourName").val();
         $("#yourMobile").val();
         $("#yourEmail").val();
+        $("#pizzaFlavour option:selected").val();
         $("#pizzaSize optgroup option:selected").val();
         $("#pizzaCrust optgroup option:selected").val();
         $("#pizzaTopping optgroup option:selected").val();
         $("#addQuantity").val();
-
-
-        $("#pizzaSize optgroup option:selected").text();
-        $("#pizzaCrust optgroup option:selected").text();
-        $("#pizzaTopping optgroup option:selected").text();
     });
 });
 
 
+
+// START FUNCTION THAT PRINTS ORDER
 function orderPrint(){
     let print_div = document.getElementById("infoDisplay"); //$("#infoDisplay");
     let print_area = window.open();
@@ -57,12 +56,48 @@ function orderPrint(){
     print_area.print();
     print_area.close();
 }
+// END FUNCTION THAT PRINTS ORDER
 
+
+
+// START FUNCTION FOR DELIVERY
 function orderDeliver(){
     let location = prompt("Enter your location");
-    alert("Your order will be delivered to " +location+ " at an Extra cost of Ksh. 200/=");
+    let total = (pizzaFlavour() + pizzaCrust() + pizzaTopping())*getQuantity();
+    alert("Your order will be delivered to " +location+ " at an Extra cost of Ksh. 200/= \n " + " Your Overall cost: Ksh. " + (total+200) + "/=");
 }
 
 function orderNoDeliver(){
-    alert("You are welcomed to pick your order at Colossal Pizza, Korogocho. From 8:00AM to 10:30PM !")
+    let total = (pizzaFlavour() + pizzaCrust() + pizzaTopping())*getQuantity();
+    alert("You are welcomed to pick your order at Colossal Pizza, Korogocho. From 8:00AM to 10:30PM ! \n" + "Please come with Ksh. " +total+ "/=")
 }
+// END FUNCTION FOR DELIVERY
+
+
+
+// START  COST CALCULATION
+function pizzaFlavour(){
+    let selectedPizzaSize =$("#pizzaSize optgroup option:selected").val();
+    return parseInt(selectedPizzaSize);
+}
+
+function pizzaCrust(){
+    let selectedpizzaCrust =$("#pizzaCrust optgroup option:selected").val();
+    return parseInt(selectedpizzaCrust);
+}
+
+function pizzaTopping(){
+    let selectedpizzaTopping =$("#pizzaTopping optgroup option:selected").val();
+    return parseInt(selectedpizzaTopping);
+}
+
+function getQuantity(){
+    let inputtedQuantity = $("#addQuantity").val();
+    return parseInt(inputtedQuantity);
+}
+
+function totalAmount(){
+    let total = (pizzaFlavour() + pizzaCrust() + pizzaTopping())*getQuantity();
+    $("#lblPizzaCost").html(total);
+}
+// END  COST CALCULATION
