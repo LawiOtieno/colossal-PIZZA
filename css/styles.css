@@ -16,7 +16,7 @@
     border-radius: 50%;
 }
 
-.pizzaSizee, .pizzaCrustt, .pizzaToppingg{
+.pizzaFlavourr, .pizzaSizee, .pizzaCrustt, .pizzaToppingg{
     height: 70px;
     width: 100%;
     background-color: antiquewhite;
@@ -36,4 +36,12 @@
 
 #infoDisplay{
     display: none;
+    border-radius: 3px;
+    background-color: rgba(206, 204, 192, 0.301);
+}
+
+#infoDelivery{
+    display: none;
+    background-color: rgba(135, 150, 107, 0.493);
+    border-radius: 4px;
 }
